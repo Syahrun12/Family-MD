@@ -32,7 +32,7 @@ Verification Success
 ╰── *Success* ──
 `.trim()
     let mentionedJid = [who]
-     conn.sendButton(m.chat, str, wm, 'Menu', '.menu', m,)
+     conn.sendMessage(m.chat, { caption: str, image: { url: pp, fileName: 'pp.jpg'}, mentions: mentionedJid}, { quoted: m})
     conn.reply('6285669537589-1614830865@g.us', `*「 Verify 」*\nNomor : wa.me/${m.sender.split`@`[0]}\nPesan : ${'@' + m.sender.split`@`[0]} Berhasil Melakukan Verifikasi`, m)
 }
 }
