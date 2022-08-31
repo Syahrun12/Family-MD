@@ -48,7 +48,7 @@ global.urlnya = "https://www.instagram.com/aguzfamilia"
 
 //============= callButtons =============//
 global.dtc = 'ᴄᴀʟʟ ᴏᴡɴᴇʀ'
-global.phn = '+62 813-2017-0984'
+global.phn = '6285267381129'
 
 //============= Games ================//
 global.benar = '_*Benar✅*_'
@@ -58,12 +58,12 @@ global.dikit = "dikit lagi, semangat ya :')"
 global.multiplier = 100 // The higher, The harder levelup
 
 // Sticker WM
-global.packname = data.namabot;
-global.author = data.owner;
+global.packname = Irunnnbot;
+global.author = 6283175369020;
 
 //=========== Requirements ==========//  
-        global.colong1 = 'Ciss 📸'
-        global.colong2 = 'ʙy ᴀɢᴜᴢ ꜰᴀᴍɪʟɪᴀ'
+        global.colong1 = 'Irunnnnbot'
+        global.colong2 = 'ʙy Irunnnbot'
 global.img = pickRandom(waifu)
 global.fla = pickRandom(flaaa)
 
