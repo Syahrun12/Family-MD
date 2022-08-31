@@ -437,7 +437,6 @@ module.exports = {
                     if (m.chat in global.db.data.chats || m.sender in global.db.data.users) {
                         let chat = global.db.data.chats[m.chat]
                         let user = global.db.data.users[m.sender]
-                        if (name != 'verify.js' && user && user.verifikasi === false) return conn.sendButton(m.chat, `Hallo ${conn.getName(m.sender)}, Kamu Belum Terdaftar DI Database Bot\nSilahkan Daftar Terebih Dahulu\nSilahkan Klik Button DIbawah Ini Untuk Terdaftar Ke Database Bot`.trim(), wm, 'Verify', '@verify', m)                        
                         if (!['unbanchat.js', 'dompet.js', 'creator.js'].includes(name) && chat && chat?.isBanned && !isPrems) return // Kecuali ini, bisa digunakan
                         if (!['unbanchat.js', 'dompet.js', 'creator.js'].includes(name) && user && user?.banned) return
                         
