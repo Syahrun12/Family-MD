@@ -32,8 +32,8 @@ Verification Success
 ╰── *Success* ──
 `.trim()
     let mentionedJid = [who]
-    conn.sendButton(m.chat, str, wm, { 'button[0]': 'Menu', 'row[0]': '.menu' }, m, null, 'image', pp)
-    conn.reply('120363039892334404@g.us', `*「 Verify 」*\nNomor : wa.me/${m.sender.split`@`[0]}\nPesan : ${'@' + m.sender.split`@`[0]} Berhasil Melakukan Verifikasi`, m)
+     conn.sendButton(m.chat, str, wm, 'Menu', '.menu', m,)
+    conn.reply('6285669537589-1614830865@g.us', `*「 Verify 」*\nNomor : wa.me/${m.sender.split`@`[0]}\nPesan : ${'@' + m.sender.split`@`[0]} Berhasil Melakukan Verifikasi`, m)
 }
 }
 handler.help = ['verify']
