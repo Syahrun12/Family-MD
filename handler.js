@@ -140,7 +140,7 @@ module.exports = {
                     if (!('petani' in user)) user.petani = false
                     if (!('montir' in user)) user.montir = false
                     if (!('kuli' in user)) user.kuli = false
-                    if (!('polisi' in user)) user.polisi = false
+                    if (!('verifikasi' in user)) user.verifikasi = false
                 } else global.db.data.users[m.sender] = {
                     joincount: 1,
                     healt: 100,
@@ -244,6 +244,7 @@ module.exports = {
                     montir: false,
                     kuli: false,
                     polisi: false,
+                    verifikasi: false,
                 }
                 let chat = global.db.data.chats[m.chat]
                 if (typeof chat !== 'object') global.db.data.chats[m.chat] = {}
@@ -436,8 +437,7 @@ module.exports = {
                     if (m.chat in global.db.data.chats || m.sender in global.db.data.users) {
                         let chat = global.db.data.chats[m.chat]
                         let user = global.db.data.users[m.sender]
-                        if (!['verify.js', 'creator.js'].inludes(name) && user && user verifikasi === false) return conn.send2Button(m.chat, Hallo {'@' + m.sender.split`@`[0], Kamu Belum Terdaftar DI Database Bot\nSilahkan Daftar Terebih Dahulu\nSilahkan Klik Button DIbawah Ini Untuk Terdaftar Ke Database Bot`, wm, `Verify`, `.verify`, `Owner`, `.owner`, m)
-                        if (!['unbanchat.js', 'dompet.js', 'creator.js'].includes(name) && chat && chat?.isBanned && !isPrems) return // Kecuali ini, bisa digunakan
+                        if (!['verify.js', 'creator.js'].inludes(name) && user && user verifikasi === false) return conn.send2Button(m.chat, Hallo {'@' + m.sender.split`@`[0], Kamu Belum Terdaftar DI Database Bot\nSilahkan Daftar Terebih Dahulu\nSilahkan Klik Button DIbawah Ini Untuk Terdaftar Ke Database Bot`, wm, `Verify`, `@verify`, `Owner`, `.owner`, m)                        if (!['unbanchat.js', 'dompet.js', 'creator.js'].includes(name) && chat && chat?.isBanned && !isPrems) return // Kecuali ini, bisa digunakan
                         if (!['unbanchat.js', 'dompet.js', 'creator.js'].includes(name) && user && user?.banned) return
                     }
                     if (plugin.rowner && plugin.owner && !(isROwner || isOwner)) { // Both Owner
